@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from "next/font/google";
 import LocalFont from "next/font/local";
 import { Metadata } from "next";
+import Particles from './components/practicles';
 
 export const metadata: Metadata = {
   title: {
@@ -68,6 +69,10 @@ export default function RootLayout({
         className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
       >
+        <Particles
+          className="absolute inset-0 -z-10 animate-fade-in"
+          quantity={200}
+        />
         {children}
       </body>
     </html>
