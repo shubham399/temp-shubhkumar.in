@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import LocalFont from "next/font/local";
 import { Metadata } from "next";
 import Particles from './components/practicles';
+import ScrollToTop from './components/ScrollToTop';
 
 export const metadata: Metadata = {
   title: {
@@ -70,10 +71,12 @@ export default function RootLayout({
           }`}
       >
         <Particles
-          className="absolute inset-0 -z-10 animate-fade-in"
+          className="absolute inset-0 -z-10 animate-fade-in w-full h-full"
           quantity={200}
+          refresh={true}
         />
         {children}
+        <ScrollToTop/>
       </body>
     </html>
   );
