@@ -1,6 +1,6 @@
 import { Navigation } from "../components/nav";
 
-export default function Home() {
+export default function Contact() {
     return (
         <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
             <Navigation/>
@@ -41,7 +41,7 @@ export default function Home() {
                 <input type="text" name="_gotcha" className="hidden" />
                 <div className="flex flex-wrap mb-6">
                     {/* <div className="block"> */}
-                    <input className="shadow w-full bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-zinc-500  font-bold py-3 px-4 mb-3 rounded" type="submit" value="Send" />
+                    <input className="shadow w-full hover:bg-zinc-400 focus:shadow-outline focus:outline-none text-white bg-zinc-500  font-bold py-3 px-4 mb-3 rounded" type="submit" value="Send" />
                     {/* </div> */}
                 </div>
             </form>
