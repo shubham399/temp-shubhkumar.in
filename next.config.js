@@ -2,7 +2,7 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-    basePath: "https://v3.shubhkumar.in",
+    basePath: "",
     output: 'export',
     // Optional: Add a trailing slash to all paths `/about` -> `/about/`
     trailingSlash: true,
