@@ -17,7 +17,7 @@ export default function Feature() {
     }, []);
 
     return (<section ref={ref} className="min-w-screen min-h-screen flex flex-col  items-center justify-center">
-        <div className={`my-16 text-center ${isIntersecting ? "animate-fade-in" : "hidden"}`}
+        <div className={`my-16 text-center ${isIntersecting && "animate-fade-in"}`}
 
         >
             <h2 className="text-md text-zinc-500 ">
