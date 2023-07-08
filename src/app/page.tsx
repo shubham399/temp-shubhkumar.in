@@ -1,14 +1,17 @@
 import { Navigation } from './components/nav';
-import { Card } from './components/card';
 import ScrollUp from './components/ScrollUp';
-import Hero from './components/Hero';
+import Feature from './Sections/Feature';
+import Hero from './Sections/Hero';
 
 export default function Home() {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-tl from-black via-zinc-600/20 to-black overflow-hidden snap-end	">
-      <ScrollUp />
+    <>
       <Navigation isHome={true} />
-      <Hero />
-    </div>
+      <div className=" m-0 p-0 flex flex-col h-full w-full overflow-y-scroll overflow-x-hidden items-center justify-center bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+        <ScrollUp />
+        <Hero />
+        <Feature />
+      </div>
+    </>
   );
 }
