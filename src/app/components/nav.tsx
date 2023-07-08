@@ -3,6 +3,7 @@ import { ArrowLeft, Home } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Links from '@/configs/NavLinks';
+import Particles from "./practicles";
 interface NavigationType {
 	isHome?: boolean;
 }
@@ -24,7 +25,7 @@ export const Navigation: React.FC<NavigationType> = ({ isHome = false }) => {
 		<header ref={ref}>
 
 			<div
-				className={`fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200 border-b  ${isIntersecting
+				className={`fixed inset-x-0 top-0 w-screen backdrop-blur  duration-200 border-b  ${isIntersecting
 					? "bg-zinc-900/0 border-transparent"
 					: "bg-zinc-900/500  border-zinc-800 "
 					}`}
