@@ -16,7 +16,7 @@ export default function Feature() {
         return () => observer.disconnect();
     }, []);
 
-    return (<section ref={ref} className="min-w-screen min-h-screen snap-start	flex flex-col  items-center justify-center">
+    return (<section ref={ref} className="min-w-screen min-h-screen flex flex-col  items-center justify-center">
         <div className={`my-16 text-center ${isIntersecting ? "animate-fade-in" : "hidden"}`}
 
         >
