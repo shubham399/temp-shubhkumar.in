@@ -1,5 +1,4 @@
 import { Navigation } from "../components/nav";
-import Particles from "../components/practicles";
 
 export default function Contact() {
     return (

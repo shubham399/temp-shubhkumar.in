@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Particles from "../components/practicles";
 
 export default function Hero() {
     return (

@@ -71,7 +71,7 @@ export default function RootLayout({
           }`}
       >
         <Particles
-          className="absolute inset-0 -z-10 animate-fade-in w-full h-full"
+          className="absolute inset-0 -z-10 animate-fade-in"
           quantity={200}
           refresh={true}
         />

@@ -3,7 +3,6 @@ import { ArrowLeft, Home } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Links from '@/configs/NavLinks';
-import Particles from "./practicles";
 interface NavigationType {
 	isHome?: boolean;
 }
