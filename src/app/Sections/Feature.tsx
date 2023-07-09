@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 export default function Feature() {
-    const ref = useRef<HTMLElement>(null);
+    const ref = useRef<HTMLHeadingElement>(null);
     const [isIntersecting, setIntersecting] = useState(false);
 
     useEffect(() => {
@@ -16,11 +16,11 @@ export default function Feature() {
         return () => observer.disconnect();
     }, []);
 
-    return (<section ref={ref} className="min-h-screen flex flex-col  items-center justify-center">
+    return (<section className="min-h-screen flex flex-col  items-center justify-center">
         <div className={`my-16 text-center ${isIntersecting && "animate-fade-in"}`}
 
         >
-            <h2 className="text-md text-zinc-500 ">
+            <h2 ref={ref} className="text-md text-zinc-500 ">
                 Hi, my name is Shubham Kumar, I &#39;  m building software
                 solutions at{" "}
                 <Link
