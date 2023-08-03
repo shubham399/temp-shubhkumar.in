@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_3ff8ed428b3462c"
   },
   "dependencies": {
     "@types/node": "20.4.0",
@@ -20,19 +23,32 @@
     "postcss": "8.4.25",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2",
     "semver": ">=7.5.2",
+    "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
   },
   "devDependencies": {
     "@opentelemetry/api": "^1.4.1",
+    "@storybook/addon-essentials": "^7.2.0",
+    "@storybook/addon-interactions": "^7.2.0",
+    "@storybook/addon-links": "^7.2.0",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.2.0",
+    "@storybook/nextjs": "^7.2.0",
+    "@storybook/react": "^7.2.0",
+    "@storybook/testing-library": "^0.2.0",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.13",
+    "chromatic": "^6.20.0",
+    "eslint-plugin-storybook": "^0.6.13",
     "postcss": "^8.4.21",
     "postcss-nesting": "^11.2.2",
     "rome": "^11.0.0",
+    "storybook": "^7.2.0",
     "tailwindcss": "^3.2.7",
     "tailwindcss-debug-screens": "^2.2.1"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "v3-site@1.0.0"
 }
